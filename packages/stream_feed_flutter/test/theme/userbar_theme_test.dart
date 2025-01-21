@@ -187,14 +187,14 @@ const _userBarThemeDefault = UserBarThemeData(
   avatarSize: 46,
 );
 
-const _userBarThemeHalfLerp = UserBarThemeData(
+final _userBarThemeHalfLerp = UserBarThemeData(
   usernameTextStyle: TextStyle(
-    color: Color(0xff7f758b),
+    color: Color.lerp(Color(0xff0ba8e0), Colors.red, 0.5)!,
     fontWeight: FontWeight.w700,
     fontSize: 14,
   ),
   timestampTextStyle: TextStyle(
-    color: Color(0xff8c9092),
+    color: Color.lerp(Color(0xff7a8287), Colors.grey, 0.5)!,
     fontWeight: FontWeight.w400,
     height: 1.5,
     fontSize: 14,

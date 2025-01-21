@@ -94,7 +94,7 @@ class _ComposeViewState extends State<ComposeView> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).canvasColor,
         iconTheme: Theme.of(context).iconTheme,
-        titleTextStyle: Theme.of(context).textTheme.headline6,
+        titleTextStyle: Theme.of(context).textTheme.headlineSmall,
         elevation: 0,
         title: Text(_isReply ? 'Reply' : 'Post'),
         actions: [

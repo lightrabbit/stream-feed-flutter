@@ -219,10 +219,13 @@ const _reactionThemeDefault = ReactionThemeData(
   toggleHoverColor: Colors.lightBlue,
   hoverColor: Colors.lightBlue,
 );
-const _reactionThemeMidLerp = ReactionThemeData(
-  iconHoverColor: Color(0xff7b7695),
-  toggleHoverColor: Color(0xff7b7695),
-  hoverColor: Color(0xff7b7695),
+final _reactionThemeMidLerp = ReactionThemeData(
+  hoverColor: Color.lerp(
+      _reactionThemeDefault.hoverColor, _reactionThemeFullLerp.hoverColor, 0.5),
+  toggleHoverColor: Color.lerp(_reactionThemeDefault.toggleHoverColor,
+      _reactionThemeFullLerp.toggleHoverColor, 0.5),
+  iconHoverColor: Color.lerp(_reactionThemeDefault.iconHoverColor,
+      _reactionThemeFullLerp.iconHoverColor, 0.5),
 );
 const _reactionThemeFullLerp = ReactionThemeData(
   iconHoverColor: Colors.red,

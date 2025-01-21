@@ -231,10 +231,10 @@ const _galleryHeaderTheme = GalleryHeaderThemeData(
 );
 
 const _galleryHeaderThemeMidLerp = GalleryHeaderThemeData(
-  closeButtonColor: Color(0xff7f7f7f),
-  backgroundColor: Color(0xff7f7f7f),
+  closeButtonColor: Color.from(alpha: 1, red: 0.5, green: 0.5, blue: 0.5),
+  backgroundColor: Color.from(alpha: 1, red: 0.5, green: 0.5, blue: 0.5),
   titleTextStyle: TextStyle(
-    color: Color(0xff7f7f7f),
+    color: Color.from(alpha: 1, red: 0.5, green: 0.5, blue: 0.5),
   ),
 );
 

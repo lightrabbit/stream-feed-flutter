@@ -10,7 +10,7 @@ void main() {
         const GifDialogThemeData().copyWith().hashCode);
   });
 
-  test('ChildReactionThemeData lerps halfway', () {
+  test('GifDialogThemeData lerps halfway', () {
     expect(
         const GifDialogThemeData()
             .lerp(_gifDialogThemeDefault, _gifDialogThemeFullLerp, 0.5),
@@ -182,9 +182,11 @@ final _gifDialogThemeDefault = GifDialogThemeData(
 final _gifDialogThemeMidLerp = GifDialogThemeData(
   boxDecoration: BoxDecoration(
     borderRadius: BorderRadius.circular(7),
-    border: Border.all(color: const Color(0xff8a6c94)),
+    border: Border.all(
+      color: Color.lerp(Colors.blue, Colors.red, 0.5)!,
+    ),
   ),
-  iconColor: const Color(0xff8a6c94),
+  iconColor: Color.lerp(Colors.blue, Colors.red, 0.5)!,
 );
 
 final _gifDialogThemeFullLerp = GifDialogThemeData(

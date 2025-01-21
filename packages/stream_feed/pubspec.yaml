@@ -15,7 +15,7 @@ dependencies:
   faye_dart:
     #path: ../faye_dart
     git:
-      url: https://github.com/followthemoney1/stream-feed-flutter.git
+      url: https://github.com/lightrabbit/stream-feed-flutter.git
       ref: master
       path: packages/faye_dart
   http_parser: ^4.0.2

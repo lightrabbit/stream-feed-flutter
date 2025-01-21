@@ -184,14 +184,14 @@ const _ogCardThemeDefault = OgCardThemeData(
   ),
 );
 
-const _ogCardThemeMidLerp = OgCardThemeData(
+final _ogCardThemeMidLerp = OgCardThemeData(
   titleTextStyle: TextStyle(
-    color: Color(0xff7a5e9a),
+    color: Color.lerp(Color(0xff007aff), Colors.red, 0.5)!,
     fontSize: 14,
     overflow: TextOverflow.ellipsis,
   ),
   descriptionTextStyle: TextStyle(
-    color: Color(0xff3c4144),
+    color: Color.lerp(Color(0xff364047), Colors.grey.shade800, 0.5)!,
     fontSize: 13,
     overflow: TextOverflow.ellipsis,
   ),
